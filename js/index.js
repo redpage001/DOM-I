@@ -40,3 +40,83 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+document.querySelector("a:nth-of-type(1)").textContent = siteContent["nav"]["nav-item-1"];
+document.querySelector("a:nth-of-type(2)").textContent = siteContent["nav"]["nav-item-2"];
+document.querySelector("a:nth-of-type(3)").textContent = siteContent["nav"]["nav-item-3"];
+document.querySelector("a:nth-of-type(4)").textContent = siteContent["nav"]["nav-item-4"];
+document.querySelector("a:nth-of-type(5)").textContent = siteContent["nav"]["nav-item-5"];
+document.querySelector("a:nth-of-type(6)").textContent = siteContent["nav"]["nav-item-6"];
+
+// cta
+
+document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
+document.querySelector(".cta-text button").textContent = siteContent["cta"]["button"];
+document.querySelector("#cta-img").src = siteContent["cta"]["img-src"];
+
+// main content
+
+document.querySelector(".top-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["features-h4"];
+document.querySelector(".top-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["features-content"];
+
+document.querySelector(".top-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["about-h4"];
+document.querySelector(".top-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["about-content"];
+
+document.querySelector("#middle-img").src = siteContent["main-content"]["middle-img-src"];
+
+document.querySelector(".bottom-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["services-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["services-content"];
+
+document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["product-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["product-content"];
+
+document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent["main-content"]["vision-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent["main-content"]["vision-content"];
+
+// contanct
+
+document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"];
+
+document.querySelector(".contact p:nth-of-type(1)").textContent = siteContent["contact"]["address"];
+
+document.querySelector(".contact p:nth-of-type(2)").textContent = siteContent["contact"]["phone"];
+
+document.querySelector(".contact p:nth-of-type(3)").textContent = siteContent["contact"]["email"];
+
+// footer
+
+document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
+
+// additional
+
+// document.querySelector("nav a").style.color = "green";
+
+const future = document.createElement("a");
+future.href = "#";
+future.textContent = "Future";
+
+const past = document.createElement("a");
+past.href = "#";
+past.textContent = "Past";
+
+document.querySelector("nav").appendChild(future);
+document.querySelector("nav").prepend(past);
+
+document.querySelectorAll("nav a").forEach( val => {val.style.color = "green"});
+
+// Stretch
+
+document.querySelectorAll("h4").forEach( val => {val.style.color = "green"});
+document.querySelectorAll("h4").forEach( val => {val.style.fontSize = "1.75rem"});
+
+document.querySelectorAll(".text-content").forEach( val => {val.style.backgroundColor = "#EEFEFA"});
+
+document.querySelector("body").style.backgroundColor = "#C7FCEE";
+
+document.querySelector("h1").style.fontSize = "6.5rem";
+
+document.querySelector("button").style.backgroundColor = "green";
+document.querySelector("button").style.fontSize = "2.5rem";
+document.querySelector("button").style.fontWeight = "bold";
+document.querySelector("button").style.height = "10vh";
+document.querySelector("button").style.width = "75%";
